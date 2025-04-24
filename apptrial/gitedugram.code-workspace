@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "EduGram",
+			"path": "../../Documents/github/EduGram"
+		},
+		{
+			"name": "apptrial",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EduGram"
+	}
+}

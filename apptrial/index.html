@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduGram</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-bg">
+  <header>
+    <h1>EduGram</h1>
+    <div class="account-menu" onclick="showAccountDetails()">
+      <span id="currentUser">John Doe</span>
+      <button id="logoutBtn">Logout</button>
+      <div id="accountDetails" class="hidden">
+      <p><strong>User:</strong> John Doe</p>
+      <p><strong>Activity:</strong> Active on EduGram</p>
+      </div>
+    </div>
+    <script>
+      function showAccountDetails() {
+      const accountDetails = document.getElementById('accountDetails');
+      accountDetails.classList.toggle('hidden');
+      }
+    </script>
+    <style>
+      .hidden {
+      display: none;
+      }
+      #accountDetails {
+      margin-top: 10px;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      }
+    </style>
+  </header>
+  <section class="filters">
+    <button class="filter-btn" data-topic="quiz" onclick="location.href='quiz.html'">Quiz</button>
+    <button class="filter-btn" data-topic="all">All</button>
+    <button class="filter-btn" data-topic="data-structures">Data Structures</button>
+    <button class="filter-btn" data-topic="algorithms">Algorithms</button>
+    <button class="filter-btn" data-topic="blockchain">Blockchain</button>
+    <button class="filter-btn" data-topic="web-development">Web Development</button>
+    <button class="filter-btn" data-topic="cloud">Cloud</button>
+    <button class="filter-btn" data-topic="cyber-security">Cyber Security</button>
+  </section>
+  <section class="reel-container"></section>
+    <video class="reel-video" src="cloud.mp4" autoplay loop playsinline controls></video>
+    <video class="reel-video" src="datastruct.mp4" autoplay loop playsinline controls></video>
+    <video class="reel-video" src="blockchain.mp4" autoplay loop playsinline controls></video>
+    <video class="reel-video" src="bst.mp4" autoplay loop playsinline controls></video>
+  </section>
+  <main id="videoFeed" class="reels-feed"></main>
+  <script src="script.js"></script>
+</body>
+</html>

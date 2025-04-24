@@ -1,0 +1,155 @@
+:root {
+    --lavender: #a980f6;
+    --off-white: #dadaee;
+    --accent: #7e57c2;
+    --light-gray: #eee9ee;
+  }
+  
+  body.login-bg {
+    background: var(--lavender);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  body.main-bg {
+    background: var(--off-white);
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(179,157,219,0.1);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    color: var(--lavender);
+  }
+  
+  .login-container input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--light-gray);
+  }
+  
+  .login-container button {
+    background: var(--lavender);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  header {
+    background: var(--lavender);
+    color: #fceeee;
+    padding: 1rem;
+    display: flex;
+    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .account-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+    background: var(--off-white);
+  }
+  
+  .filter-btn {
+    background: var(--lavender);
+    color: #fff6f6;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: var(--accent);
+  }
+  .video-card video[src$="cloud.mp4"] {
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 16px rgba(126, 87, 194, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    height: 220px;
+    width: 95%;
+  }
+
+  .video-card video[src$="cloud.mp4"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(126, 87, 194, 0.3);
+  }
+  .reels-feed {
+    max-width: 400px;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .video-card video[src$="datastruct.mp4"] {
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 16px rgba(126, 87, 194, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    height: 220px;
+    width: 95%;
+  }
+
+  .video-card video[src$="datastruct.mp4"]:hover,
+  .video-card video[src$="bst.mp4"]:hover,
+  .video-card video[src$="blockchain.mp4"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(126, 87, 194, 0.3);
+  }
+  
+  .video-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(179,157,219,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-card video {
+    border-radius: 12px;
+    width: 100%;
+    max-height: 320px;
+    margin-bottom: 1rem;
+  }
+  
+  .video-card .topic {
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .video-card video {
+    max-height: 240px;
+  }
